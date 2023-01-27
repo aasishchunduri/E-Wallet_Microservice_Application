@@ -4,7 +4,6 @@ A comprehensive e-wallet system that enables users to effortlessly transfer amou
 
 <img width="803" alt="image" src="https://github.com/anudeep2804/E_Wallet_Microservice_Application/assets/68229062/f2049546-4f6c-47d8-850b-e706ea7509b6">
 
-
 ## 🚀 Features
 
 - **P2P Transfers**: Allow users to send money to other registered users.
@@ -27,27 +26,30 @@ A comprehensive e-wallet system that enables users to effortlessly transfer amou
 - **Kafka**: Real-time data streaming for inter-service communication.
 - **OAuth**: Authentication and authorization.
 - **Spring Security**: Secure the endpoints.
-- **JPA**: Data management and persistence. 
+- **JPA**: Data management and persistence.
 - **Databases**: Independent databases for each microservice.
 
 ## 📌 Controller Insights
 
 ### Transaction Controller (`TxnController`)
+
 - 🔗 **Endpoint**: `/txn`
   - **Method**: POST
   - **Description**: Initiate a P2P transaction.
   - **Parameters**: `receiver`, `purpose`, `amount`.
 
 ### User Controller (`UserController`)
+
 - 🔗 **Endpoint**: `/user`
   - **Method**: POST
   - **Description**: Register a new user.
-  
 - 🔗 **Endpoint**: `/user`
+
   - **Method**: GET
   - **Description**: Fetch authenticated user details.
 
 - 🔗 **Endpoint**: `/admin/all/users`
+
   - **Method**: GET
   - **Description**: Get details of all registered users (admin only).
 
@@ -62,10 +64,3 @@ A comprehensive e-wallet system that enables users to effortlessly transfer amou
 3. **Environment**: Update `application.properties` with relevant credentials.
 4. **Kafka**: Ensure the Kafka server is operational.
 5. **Run**: Build and initiate each microservice using Spring Boot.
-
----
-
-🤝 **Contributions**
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](#).
-
